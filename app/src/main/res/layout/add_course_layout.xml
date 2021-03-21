@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="300dp"
+    android:layout_height="400dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ET_ad_title"
+            android:hint="Course Title"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="55dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ET_ad_description"
+            android:hint="Course Description"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="55dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ET_ad_price"
+            android:hint="Course Price"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="55dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetailActivity">
+
+    <TextView
+        android:id="@+id/TV_detail_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Course Title"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_detail_course_description"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Description"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_detail_course_title"
+        app:layout_constraintTop_toBottomOf="@+id/TV_detail_course_title" />
+
+    <TextView
+        android:id="@+id/TV_detail_course_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Course Price"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_detail_course_description" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FAB_delete_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
